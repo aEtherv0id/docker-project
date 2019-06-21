@@ -1,8 +1,8 @@
-#README#
+**README**
 
 Here are some guidelines in using the contents of this Project:
 
-#Images:#
+**Images**
 
    This part contains images or VMs that were built to explore Docker and Containerization in general.
 The images produced may increase in time (once other contributors would add their own,
@@ -22,15 +22,14 @@ contribute much to the memory and processor load of the host systems.
      better. Visit https://gitlab.com/joji.angas/shell-tools to learn more about this exciting framework!
 
 
-#Dockerfiles#
-
+**Dockerfiles**
    This part contains Dockerfiles -  the cornerstone in creating and configuring Docker images.
 These files would contain configuration options for container creation and launching. 
 Docker images can be created from these container instances, which can then be further worked upon
 to create better containers.
 
 
-#Docker-Compose#
+**Docker-Compose**
 
    This part contains docker-compose files - which are configuration files that can be used to 
 orchestrate the creation of ecosystems comprising of Docker containers.
@@ -41,7 +40,7 @@ The creation and configuration of these ecosystem components can be configured u
 and the containers can be created and launched by running the docker-compose file.
 
 
-#Documents#
+**Documents**
 
    This is where you got this file. Self-explanatory. Contains documentation regarding all tools and artefacts
 Found within this Project. Contribute new documents, or update existing documents to contain newer information.
@@ -52,4 +51,4 @@ Come on, join the fun! ;)
 
 
 
-v1.0, (C) 2019 Joji Angas
+*v1.0, (C) 2019 Joji Angas*
