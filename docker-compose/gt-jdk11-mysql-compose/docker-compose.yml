@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+   db:
+      image: mysql:latest
+      container_name: mysql8
+
+      volumes:
+        - db_data:/var/lib/mysql
+
+      restart: always
+
+      environment:
+         MYSQL_ROOT_PASSWORD: ohmamamay
+         MYSQL_DATABASE:
+         MYSQL_USER: gtadmin
+         MYSQL_PASSWORD: gtadmin
+
+   java_web:
+      depends_on:
+         - db
+      image: aetherv0id/gt-alpine-zulu-jdk11:latest
+      container_name: java_web11
+
+      volumes:
+        - deploy_data:/opt/tools/deploy 
+         
+      ports:
+        - "8000:80"
+
+      restart: always
+
+
+volumes:
+   deploy_data:
+   db_data:
